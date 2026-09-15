@@ -1,0 +1,11 @@
+package com.tuition.teacher.subject;
+
+import lombok.Data;
+
+@Data
+public class SubjectRequest {
+
+    private String name;
+
+    private String description;
+}
