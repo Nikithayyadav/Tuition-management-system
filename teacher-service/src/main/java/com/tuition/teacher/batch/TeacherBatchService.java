@@ -1,6 +1,7 @@
 package com.tuition.teacher.batch;
 
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 @Service
 public class TeacherBatchService {
@@ -26,5 +27,8 @@ public class TeacherBatchService {
         teacherBatch.setBatchId(batchId);
 
         return teacherBatchRepository.save(teacherBatch);
+    }
+    public List<TeacherBatch> getAllTeacherBatches() {
+        return teacherBatchRepository.findAll();
     }
 }
